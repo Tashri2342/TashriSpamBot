@@ -1,5 +1,5 @@
 from config import API_ID, API_HASH, SESSIONS
-from pyrotash.tpyconfig.tpyconfig import Chatbt_config, chatgp_config
+from tpyconfig.tpyconfig import Chatbt_config, chatgp_config
 from pyrogram import Client, idle
 
 
