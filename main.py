@@ -1,4 +1,5 @@
 from config import API_ID, API_HASH, SESSIONS
+from pyrotash.tpyconfig import Chatbt_config, chatgp_config
 from pyrogram import Client, idle
 
 
@@ -20,8 +21,8 @@ if __name__ == "__main__":
     for i, CLIENT in enumerate(CLIENTS):
         try:
             CLIENT.start()
-            CLIENT.join_chat("Tashribots")
-            CLIENT.join_chat("Tashrichatting")
+            CLIENT.join_chat(Chatbt_config)
+            CLIENT.join_chat(chatgp_config)
             print(f"---> Client {i+1} has been Started...")
         except Exception as e:
             print(e)
